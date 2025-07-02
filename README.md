@@ -6,6 +6,8 @@ npm init -y
 npm install express
 ```
 
+---
+
 ### Basic Server
 ```js
 const express = require('express');
@@ -17,6 +19,8 @@ app.get('/', (req, res) => res.send('Hello World'));
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
+---
+
 ### Routing
 ```js
 app.get('/route', handler);
@@ -24,6 +28,8 @@ app.post('/route', handler);
 app.put('/route/:id', handler);
 app.delete('/route/:id', handler);
 ```
+
+---
 
 ### Middleware
 ```js
@@ -34,6 +40,8 @@ app.use((req, res, next) => {
   next();
 });
 ```
+
+---
 
 ### Authentication (JWT Example)
 ```js
@@ -51,10 +59,14 @@ function auth(req, res, next) {
 }
 ```
 
+---
+
 ### Static Files
 ```js
 app.use(express.static('public'));
 ```
+
+---
 
 ### Router
 ```js
@@ -63,6 +75,8 @@ const router = express.Router();
 router.get('/', (req, res) => res.send('Router Home'));
 app.use('/api', router);
 ```
+
+---
 
 ### Error Handling
 ```js
