@@ -1,5 +1,3 @@
----
-
 ## Express.js Cheat Sheet
 
 ### Setup
